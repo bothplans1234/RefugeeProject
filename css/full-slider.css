@@ -1,0 +1,53 @@
+/*
+ * Start Bootstrap - Full Slider (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+html,
+body {
+    height: 100%;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+
+
+footer {
+    margin: 50px 0;
+}
+.img {
+width:100% !important;
+}
+#radius{
+    display: inline-block;
+    vertical-align:top;
+    float: left;
+    
+    
+}
+#radiuss{
+    float: right;
+    position: relative;
+    bottom : 970px;
+    right:30px
+}
+#radiu{
+    position: relative;
+    left:520px;    
+    bottom: 485px;
+}
+
+.gris{
+ mqpx;
+}

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A website dedicated to make the masses aware about the rising refugee crisis. " />
+    <meta name="keywords" content="refugee, crisis, donate, help" />
+    <meta name="author" content="yagrawl" />
+
+    <title>Refugee</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="jquery-3.3.1.min.js"></script>
+    <!-- Custom CSS -->
+    <link href="css/full-slider.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700" rel="stylesheet">
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="js/stripe.js"></script>
+
+    <style>
+        h1,
+        h2,
+        p {
+            display: inline;
+        }
+
+        .buttonM {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body style="font-family: 'Montserrat', sans-serif;">
+
+    <!-- Navigation -->
+    <div class="container">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">REFUGEE</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a style="font-weight:200" href="#About">About</a>
+                    </li>
+                    <li>
+                        <a style="font-weight:200" href="#Donate">Donate</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+    </nav>
+    <div id="About">
+        <!-- Full Page Image Background Carousel Header -->
+        <div id="myCarousel" class="carousel slide">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for Slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="https://www.worldvision.org/wp-content/uploads/23-D220-0299-7-1280x854.jpg" class="img">
+                    <div class="carousel-caption">
+                        <h2 class="imageText">&nbsp;Families fleeing West Mosul&nbsp;</h2>
+                        <h6> image by Paul Beddard</h6>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://www.worldvision.org/wp-content/uploads/22-D220-0237-22-1280x854.jpg" class="img">
+                    <div class="carousel-caption">
+                        <h2 class="imageText">&nbsp;Inside the Kakuma Refugee Camp&nbsp;</h2>
+                        <h6> UNHCR media reserves</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="icon-next"></span>
+            </a>
+
+        </div>
+
+        <div class="col-lg-6">
+        </div>
+        <div class="col-lg-1 col-xs-1">
+        </div>
+    </div>
+    </div>
+    <span style="display:block; height: 30px;"> </span>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1 col-xs-1">
+            </div>
+            <div class="col-lg-6">
+            </div>
+            <div class="col-lg-1 col-xs-1">
+            </div>
+        </div>
+    </div>
+    <div>
+
+
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-third">
+                <div class="w3-card">
+                    <img src="https://www.worldvision.org/wp-content/uploads/14-D220-0257-13.jpg" style="width: 100%">
+                    <div class="w3-container">
+                        <h5>we organize them activities</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third">
+                <div class="w3-card">
+                    <img src="https://i.unu.edu/media/ourworld.unu.edu-en/article/18953/Education-in-Emergencies-Will-Syrian-Refugee-Children-Become-a-Lost-Generation.jpg"
+                        style="width:100%; height:328px">
+                    <div class="w3-container">
+                        <h5> provide them emergency funding for education</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third">
+                <div class="w3-card">
+                    <img src="https://www.saphirnews.com/photo/art/grande/9696352-15624269.jpg?v=1466164545" style="width:100%; height:328px">
+                    <div class="w3-container">
+                        <h5>Provide them with doctors support and medical needs</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-third">
+                <div class="w3-card">
+                    <img src="https://www.babble.com/wp-content/uploads/2013/08/donate-clothes-624x414.jpg" style="width:100%;height:328px">
+                    <div class="w3-container">
+                        <h5>Provide them with clothes</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third">
+                <div class="w3-card">
+                    <img src="https://photos.smugmug.com/Essays/Healthcare-for-Syrian-refugees/i-Lh7kQbW/0/ba21a71f/L/_MGL0893.JPG_IMC_%C2%A9sam_tarling-L.jpg"
+                        style="width:100%;height:328px">
+                    <div class="w3-container">
+                        <h5>Provide them with Support doctors and medical needs</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third">
+                <div class="w3-card">
+                    <img src=https://www.unhcr.ca/wp-content/uploads/2017/07/unhcr-hany.jpg "" style="width:100%; height:315px">
+                    <div class="w3-container">
+                        <h5>And the most important thing, make them feel at home and put a smile a their faces</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <span style="display:block; height: 50px;"> </span>
+
+
+    </div>
+    <div class="container-fluid" style="background-color:#DFDFDF">
+        <span style="display:block; height: 50px;"> </span>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 col-xs-1">
+                </div>
+                <div class="col-lg-10 col-xs-10">
+                    <p style="color:#CE5050; font-size:28px">Is there syrian refugees in Tunisia?</p>
+                    <p style="color:#383838; font-size:18px"> </p>
+                    <!--Explain-->
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-badge">
+                                <i class="glyphicon glyphicons-life-preserver"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title" style="color:#CE5050;">Yes there is</h4>
+                                    <p>
+                                        <small class="text-muted">
+                                            <i class="glyphicon glyphicons-life-preserver"></i>
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="timeline-body">
+                                    <center>
+                                        <img class="img-responsive" src="http://charlottecancerguide.org/wp-content/uploads/2016/09/Open_Educational_Resources.png"
+                                            width="150px">
+                                    </center>
+                                    <br>
+                                    <p>According to Realites online, Lorena Lando, president of the International Organization
+                                        for Migration in Tunisia, told the Assembly of People's Representatives that the
+                                        number of refugees currently Tunisia, is nearly 775, mostly Syrians, or 0.5% of the
+                                        indigenous population. </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge">
+                                <i class="glyphicon glyphicons-life-preserver"></i>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title" style="color:#CE5050;">Who are we?</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <center>
+                                        <img class="img-responsive" src="https://www.dfl-stiftung.de/wp-content/uploads/2015/08/30.05.2017refugees-welcome.png"
+                                            width="300px">
+                                    </center>
+                                    <br>
+                                    <p>Refugee is an association which members who carry out actions and cooperates with several
+                                        organizations to help Syrian refugees. Volunteers are often used to organize events
+                                        to help them become part of society. </p>
+
+                                </div>
+                            </div>
+                        </li>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+        <br <div class="w3-container">
+
+        <!--div num 1-->
+        <div id="radius" class="w3-card-4 w3-dark-grey" style="width:30%">
+
+            <div class="w3-container w3-center">
+                <h3>giant meal </h3>
+                <img src="https://scontent.ftun1-1.fna.fbcdn.net/v/t1.0-9/33662623_1863245817029258_5425119727271804928_n.jpg?_nc_cat=0&oh=f3337e56012e19e11408a41f1a9e099c&oe=5BF878A2"
+                    alt="Avatar" style="width:80%">
+                <h5>Refugee </h5>
+
+                <div class="w3-section">
+                    <button class="w3-button w3-green">Participate</button>
+                    <button class="w3-button w3-red">Decline</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div id="radiu" class="w3-card-4 w3-dark-grey" style="width:30%">
+
+        <div class="w3-container w3-center">
+            <h3>collection of stuffed animals</h3>
+            <img src="https://scontent.ftun1-1.fna.fbcdn.net/v/t1.0-9/34202897_1868517313168775_7067889342978457600_n.jpg?_nc_cat=0&oh=5775c4ed4b8b6012445531dd31f3b99c&oe=5BFC4BD3"
+                alt="Avatar" style="width:80%">
+            <h5>Refugee</h5>
+
+            <div class="w3-section">
+                <button class="w3-button w3-green">Participate</button>
+                <button class="w3-button w3-red">Decline</button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <!--div num 2-->
+    <div id="radiuss" class="w3-card-4 w3-dark-grey" style="width:30%">
+
+        <div class="w3-container w3-center">
+            <h3>giant meal </h3>
+            <img src="https://scontent.ftun1-1.fna.fbcdn.net/v/t1.0-9/35280626_1883277245026115_6408243887424405504_o.jpg?_nc_cat=0&oh=eaf5718878188c29ac4fd233ac461848&oe=5C31FF0A"
+                alt="Avatar" style="width:85%; height:333px">
+            <h5>Refugee</h5>
+
+            <div class="w3-section">
+                <button class="w3-button w3-green">Accept</button>
+                <button class="w3-button w3-red">Decline</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div >
+        
+                <a name="Donate"></a>
+                <p style="color:#383838;font-size:24px">If you can, please donate to help Refugees stay strong and have a decent life. </p>
+                <span style="display:block; height: 30px;"> </span>
+                <script src="https://checkout.stripe.com/checkout.js"></script>
+
+                <center>
+                    <button class="buttonM" id="customButton">Donate Now!</button>
+                </center>
+
+                <script>
+                    var handler = StripeCheckout.configure({
+                        key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
+                        image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+                        locale: 'auto',
+                        token: function (token) {
+                            // You can access the token ID with `token.id`.
+                            // Get the token ID to your server-side code for use.
+                        }
+                    });
+
+                    document.getElementById('customButton').addEventListener('click', function (e) {
+                        // Open Checkout with further options:
+                        handler.open({
+                            name: 'Refugee',
+                            description: 'Thanks!',
+                            zipCode: true,
+                            amount: 1000
+                        });
+                        e.preventDefault();
+                    });
+
+                    // Close Checkout on page navigation:
+                    window.addEventListener('popstate', function () {
+                        handler.close();
+                    });
+                </script>
+                <span style="display:block; height: 30px;"> </span>
+                <p style="color:#383838;font-size:24px">Also, share this with your friends to raise awareness about this issue.</p>
+                <span style="display:block; height: 30px;"> </span>
+                
+            </div>
+
+            <hr>
+
+            <!-- Footer -->
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>&nbsp;&nbsp;&nbsp;Copyright &copy; Yash Agrawal 2017</p>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </footer>
+
+            <!-- /.container -->
+
+            <!-- jQuery -->
+            <script src="js/jquery.js"></script>
+
+            <!-- Bootstrap Core JavaScript -->
+            <script src="js/bootstrap.min.js"></script>
+
+            <!-- Script to Activate the Carousel -->
+            <script>
+                $('.carousel').carousel({
+                    interval: 5000 //changes the speed
+                })
+            </script>
+
+
+</body>
+
+</html>
